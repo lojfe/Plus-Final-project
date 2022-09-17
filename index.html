@@ -8,112 +8,131 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/d8ffb21bb1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="src/style.css">
   <title>Weather app</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <h1>
-          Ho Chi Minh
-        </h1>
-        <ul>
-          <li>
-            Friday 07:53, clear sky
-          </li>
-          <li>
-            Humidity: <strong class="humidity">45%</strong>, Wind: <strong class="wind">3.58km/h</strong>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6">
-        <div class="justify-content-end d-flex weather-temperature">
-          <canvas width="52" height="52">
-            <img src="img/cloudy.gif" alt="cloudy">
-          </canvas>
-          <div>
-            <strong id="temperature">20</strong>
+    <div class="weather">
+      <!-- <header>
+        Weather App
+      </header> -->
+      <form class="searchForm" id="flexbox">
+        <input type="search" class="form-control" placeholder="Type a city..." autocomplete="off">
+        <input type="submit" value="Search" class="btn btn-primary search-button">
+        <button class="btn btn-primary track-location" href="#!" title="check-location" type="button">
+          <i class="fa-solid fa-location-crosshairs"></i>
+        </button>
+      </form>
+      <hr>
+      <div class="row weatherInfo">
+        <div class="col-6">
+          <h1>
+            Ho Chi Minh
+          </h1>
+          <ul>
+            <li>
+              Friday 07:53, clear sky
+            </li>
+            <li>
+              Humidity: <strong class="humidity">45%</strong>, Wind: <strong class="wind">3.58km/h</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <div class="justify-content-end d-flex weatherTemperature">
+            <canvas width="52" height="52">
+              <img src="img/cloudy.gif" alt="cloudy">
+            </canvas>
+            <div>
+              <strong id="temperature">20</strong>
 
-            <span class="unit float-left">
-              <a href="#" class="celsiusTemperature">°C</a>
-              |
-              <a href="#" class="fahrenheitTemperature">°F</a>
+              <span class="unit float-left">
+                <a href="#" class="celsiusTemperature">°C</a>
+                |
+                <a href="#" class="fahrenheitTemperature">°F</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weatherForecast row">
+        <div class="col">
+          <div class="weatherForecastPreview">
+            <p>
+              Thu
+            </p>
+            <img src="img/clouds.gif" alt="clouds">
+            <br>
+            <span class="weekdayTemperature">
+              <strong>24°</strong>
+              <span class="min">18°</span>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="weatherForecastPreview">
+            <p>
+              Thu
+            </p>
+            <img src="img/clouds.gif" alt="clouds">
+            <br>
+            <span class="weekdayTemperature">
+              <strong>24°</strong>
+              <span class="min">18°</span>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="weatherForecastPreview">
+            <p>
+              Thu
+            </p>
+            <img src="img/clouds.gif" alt="clouds">
+            <br>
+            <span class="weekdayTemperature">
+              <strong>24°</strong>
+              <span class="min">18°</span>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="weatherForecastPreview">
+            <p>
+              Thu
+            </p>
+            <img src="img/clouds.gif" alt="clouds">
+            <br>
+            <span class="weekdayTemperature">
+              <strong>24°</strong>
+              <span class="min">18°</span>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="weatherForecastPreview">
+            <p>
+              Thu
+            </p>
+            <img src="img/clouds.gif" alt="clouds">
+            <br>
+            <span class="weekdayTemperature">
+              <strong>24°</strong>
+              <span class="min">18°</span>
             </span>
           </div>
         </div>
       </div>
+      <hr>
+      <footer>
+        This project was coded by <a href="https://www.linkedin.com/in/quyenthai311/" target="blank"
+          rel="noopener noreferrer">Quyen Thai</a> and is <a href="https://github.com/akai17/Plus-Final-project.git"
+          target="blank" rel="noopener noreferrer">open-sourced on GitHub</a> and hosted on <a
+          href="https://lojfe-weather-app.netlify.app/" target="blank" rel="noopener noreferrer">Netlify</a>
+      </footer>
     </div>
-    <div class="weatherForecast row">
-      <div class="col">
-        <div class="weatherForecastPreview">
-          <p>
-            Thu
-          </p>
-          <img src="img/clouds.gif" alt="clouds">
-          <br>
-          <span>
-            <strong>24°</strong>18°
-          </span>
-        </div>
-      </div>
-      <div class="col">
-        <div class="weatherForecastPreview">
-          <p>
-            Thu
-          </p>
-          <img src="img/clouds.gif" alt="clouds">
-          <br>
-          <span>
-            <strong>24°</strong>18°
-          </span>
-        </div>
-      </div>
-      <div class="col">
-        <div class="weatherForecastPreview">
-          <p>
-            Thu
-          </p>
-          <img src="img/clouds.gif" alt="clouds">
-          <br>
-          <span>
-            <strong>24°</strong>18°
-          </span>
-        </div>
-      </div>
-      <div class="col">
-        <div class="weatherForecastPreview">
-          <p>
-            Thu
-          </p>
-          <img src="img/clouds.gif" alt="clouds">
-          <br>
-          <span>
-            <strong>24°</strong>18°
-          </span>
-        </div>
-      </div>
-      <div class="col">
-        <div class="weatherForecastPreview">
-          <p>
-            Thu
-          </p>
-          <img src="img/clouds.gif" alt="clouds">
-          <br>
-          <span>
-            <strong>24°</strong>18°
-          </span>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <footer>
-      This project was coded by <a href="https://www.linkedin.com/in/quyenthai311/" target="blank"
-        rel="noopener noreferrer">Quyen Thai</a> and is <a href="https://github.com/akai17/Plus-Final-project.git"
-        target="blank" rel="noopener noreferrer">open-sourced on GitHub</a> and hosted on <a
-        href="https://lojfe-weather-app.netlify.app/" target="blank" rel="noopener noreferrer">Netlify</a>
-    </footer>
   </div>
   <script src="src/app.js"></script>
 </body>

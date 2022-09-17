@@ -1,12 +1,23 @@
+/* header {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #f65282;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+} */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f9f7fe;
+  margin-top: 20px;
 }
 
 h1 {
   font-size: 38px;
   color: #272142;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 48px;
   padding: 0;
   margin: 20px 0 10px;
@@ -34,7 +45,7 @@ img {
 }
 
 hr {
-  color: #9b3f8f;
+  color: rgb(65 50 100 / 20%);
 }
 
 footer {
@@ -42,7 +53,61 @@ footer {
   margin-top: 40px;
 }
 
+form {
+  display: flex;
+  gap: 0;
+  padding: 0;
+  margin: 20px 0 30px;
+  height: 50px;
+}
+
+form input {
+  height: 100%;
+  line-height: 20px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.form-control {
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: rgba(39, 33, 66, 0.4);
+  background-color: #f9f7fe;
+  border-color: #f9f7fe;
+}
+
+.search-button {
+  background-color: #885df1;
+  padding: 0 40px;
+  align-items: center;
+  border-color: #885df1;
+}
+
+.btn.btn-primary.search-button:hover {
+  background-color: #5928ad;
+  border-color: #5928ad;
+}
+
+.track-location {
+  background-color: #885df1;
+  border-color: #885df1;
+  color: #fff;
+  height: 100%;
+  width: 70px;
+}
+
+.btn.btn-primary.track-location:hover {
+  color: #fff;
+  background-color: #653ad3;
+
+  border-color: #5928ad;
+}
+
 .container {
+  max-width: 800px;
+}
+
+.weather {
   display: block;
   padding: 40px;
   margin: 30px auto;
@@ -52,23 +117,45 @@ footer {
   background: #fff;
 }
 
-.weather-temperature canvas {
+.weatherTemperature {
+  display: block;
+}
+
+.weatherTemperature canvas {
   box-sizing: border-box;
 }
 
-.weather-temperature img {
+.weatherTemperature img {
   margin-right: 5px;
   width: 64px;
   height: 64px;
 }
 
 .unit {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1;
-  color: #212121;
-  top: -11px;
-  display: relative;
+  color: #885df1;
+  position: relative;
+  top: -40px;
+  /* co the su dung doan duoi day de thay the
+  display: inline-block;
+  vertical-align: top; */
+}
+
+.weekdayTemperature {
+  display: block;
+  color: #f65282;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.min {
+  opacity: 0.6;
+  margin-left: 3px;
+  padding: 0;
 }
 
 #temperature {
