@@ -53,8 +53,18 @@ hr {
 }
 
 footer {
+  display: block;
   text-align: center;
   margin-top: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 200;
+  color: rgba(39, 33, 66, 0.4);
+  box-sizing: border-box;
+}
+
+footer a {
+  color: #885df1;
 }
 
 form {
@@ -136,12 +146,12 @@ form input {
 }
 
 .unit {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1;
-  color: #885df1;
+  color: #272142;
   position: relative;
-  top: -40px;
+  top: -42px;
   /* co the su dung doan duoi day de thay the
   display: inline-block;
   vertical-align: top; */
@@ -192,7 +202,11 @@ form input {
 }
 
 .unit .active {
-  color: #272142;
+  color: rgba(39, 33, 66, 0.6);
   cursor: default;
   text-decoration: none;
+}
+
+.unit a {
+  color: #885df1;
 }
