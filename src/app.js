@@ -43,7 +43,20 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   console.log(response.data);
 }
-let apiKey = "d876cb2d2724e0a04a25c358aafb2259";
-let city = "moscow";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
+
+function search(city) {
+  let apiKey = "d876cb2d2724e0a04a25c358aafb2259";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector(".form-control");
+  search(cityInp utElement.value);
+}
+
+search("Ho Chi Minh");
+
+let form = document.querySelector(".searchForm");
+form.addEventListener("submit", handleSubmit);
