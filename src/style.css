@@ -190,3 +190,9 @@ form input {
   box-shadow: 2px 2px 5px #b5ffff, 1px -1px 5px #9b3f8f;
   border-radius: 4px;
 }
+
+.unit .active {
+  color: #272142;
+  cursor: default;
+  text-decoration: none;
+}
