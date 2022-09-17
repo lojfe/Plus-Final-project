@@ -29,25 +29,30 @@
       <hr>
       <div class="row weatherInfo">
         <div class="col-6">
-          <h1>
-            Ho Chi Minh
-          </h1>
+          <h1 id="city"></h1>
           <ul>
             <li>
-              Friday 07:53, clear sky
+              <span id="date"></span>,
+              <span id="description"></span>
             </li>
             <li>
-              Humidity: <strong class="humidity">45%</strong>, Wind: <strong class="wind">3.58km/h</strong>
+              Humidity:
+              <span class="condition">
+                <strong class="humidity">45</strong>%
+              </span>, Wind:
+              <span class="condition">
+                <strong class="wind">3.58</strong>km/h
+              </span>
             </li>
           </ul>
         </div>
         <div class="col-6">
           <div class="justify-content-end d-flex weatherTemperature">
-            <canvas width="52" height="52">
-              <img src="img/cloudy.gif" alt="cloudy">
-            </canvas>
+            <div class="w-60">
+              <img src="" alt="" id="icon">
+            </div>
             <div>
-              <strong id="temperature">20</strong>
+              <strong id="temperature"></strong>
 
               <span class="unit float-left">
                 <a href="#" class="celsiusTemperature">°C</a>

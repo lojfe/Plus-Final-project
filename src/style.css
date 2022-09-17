@@ -36,8 +36,12 @@ li {
 }
 
 li strong {
-  color: #f65282;
   font-weight: 400;
+}
+
+#icon {
+  box-sizing: border-box;
+  margin: 30px 5px;
 }
 
 img {
@@ -50,7 +54,7 @@ hr {
 
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 form {
@@ -141,6 +145,10 @@ form input {
   /* co the su dung doan duoi day de thay the
   display: inline-block;
   vertical-align: top; */
+}
+
+.condition {
+  color: #f65282;
 }
 
 .weekdayTemperature {
