@@ -39,11 +39,6 @@ li strong {
   font-weight: 400;
 }
 
-#icon {
-  box-sizing: border-box;
-  margin: 30px 5px;
-}
-
 img {
   width: 50px;
 }
@@ -161,44 +156,10 @@ form input {
   color: #f65282;
 }
 
-.weekdayTemperature {
-  display: block;
-  color: #f65282;
-  font-size: 18px;
-  line-height: 1.5;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.min {
-  opacity: 0.6;
-  margin-left: 3px;
-  padding: 0;
-}
-
 #temperature {
   font-size: 80px;
   font-weight: 700;
   color: #272142;
-}
-
-.weatherForecast {
-  margin: 30px auto 40px;
-  padding: 0 auto 50px;
-}
-
-.weatherForecastPreview {
-  display: block;
-  transition: all 200ms ease-in-out;
-  background: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.weatherForecastPreview:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 5px #b5ffff, 1px -1px 5px #9b3f8f;
-  border-radius: 4px;
 }
 
 .unit .active {
@@ -209,4 +170,50 @@ form input {
 
 .unit a {
   color: #885df1;
+}
+
+#icon {
+  box-sizing: border-box;
+  margin: 30px 5px;
+}
+
+.weather-forecast {
+  margin: 30px auto 40px;
+  padding: 0 auto 50px;
+}
+
+.weather-forecast-preview {
+  display: block;
+  transition: all 200ms ease-in-out;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.weather-forecast-preview:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #b5ffff;
+  border-radius: 4px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  line-height: 1;
+  margin: 4px 0 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  display: block;
+  color: #f65282;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+  margin-left: 3px;
+  padding: 0;
 }
