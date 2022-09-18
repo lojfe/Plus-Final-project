@@ -1,17 +1,9 @@
-/* header {
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 48px;
-  color: #f65282;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-} */
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f9f7fe;
-  margin-top: 20px;
+  margin: auto;
+  background-image: url(" ../src/background.jpeg");
+  size-adjust: 100%;
+  opacity: .9;
 }
 
 h1 {
@@ -32,7 +24,7 @@ li {
   list-style: none;
   padding: 0;
   margin-bottom: 5px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 0.5);
 }
 
 li strong {
@@ -44,7 +36,7 @@ img {
 }
 
 hr {
-  color: rgb(65 50 100 / 20%);
+  color: rgba(65, 50, 100, 0.25);
 }
 
 footer {
@@ -54,12 +46,16 @@ footer {
   font-size: 14px;
   line-height: 18px;
   font-weight: 200;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 0.5);
   box-sizing: border-box;
 }
 
 footer a {
-  color: #885df1;
+  color: #21b069;
+}
+
+footer a:hover {
+  color: #076646;
 }
 
 form {
@@ -80,26 +76,25 @@ form input {
 .form-control {
   padding: 0 20px;
   box-sizing: border-box;
-  color: rgba(39, 33, 66, 0.4);
-  background-color: #f9f7fe;
-  border-color: #f9f7fe;
+  color: rgba(39, 33, 66, 0.7);
+  background-color: #e9fff9;
+  border-color: #e9fff9;
 }
 
 .search-button {
-  background-color: #885df1;
+  background-color: #116439;
   padding: 0 40px;
   align-items: center;
-  border-color: #885df1;
+  border: 0;
 }
 
 .btn.btn-primary.search-button:hover {
-  background-color: #5928ad;
-  border-color: #5928ad;
+  background-color: #26c272;
 }
 
 .track-location {
-  background-color: #885df1;
-  border-color: #885df1;
+  background-color: #116439;
+  border: 0;
   color: #fff;
   height: 100%;
   width: 70px;
@@ -107,13 +102,12 @@ form input {
 
 .btn.btn-primary.track-location:hover {
   color: #fff;
-  background-color: #653ad3;
-
-  border-color: #5928ad;
+  background-color: #26c272;
 }
 
 .container {
   max-width: 800px;
+  min-width: 600px;
 }
 
 .weather {
@@ -163,13 +157,17 @@ form input {
 }
 
 .unit .active {
-  color: rgba(39, 33, 66, 0.6);
+  color: rgba(39, 33, 66, 0.5);
   cursor: default;
   text-decoration: none;
 }
 
 .unit a {
-  color: #885df1;
+  color: #21b069;
+}
+
+.unit a:hover {
+  color: #076646;
 }
 
 #icon {
@@ -192,7 +190,8 @@ form input {
 
 .weather-forecast-preview:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 5px #b5ffff;
+  background-color: #f7fffd;
+  box-shadow:  2px 2px 7px rgba(10, 135, 100, 0.3), inset -1px -1px 5px rgba(222, 222, 222, 0.5);
   border-radius: 4px;
 }
 
