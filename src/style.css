@@ -77,8 +77,8 @@ form input {
   padding: 0 20px;
   box-sizing: border-box;
   color: rgba(39, 33, 66, 0.7);
-  background-color: #e9fff9;
-  border-color: #e9fff9;
+  background-color: rgba(1, 55, 40, 0.07);
+  border-color: rgba(1, 55, 40, 0.07);
 }
 
 .form-control:focus {
@@ -122,7 +122,7 @@ form input {
   border-radius: 16px;
   box-sizing: border-box;
   border: 0 30px 50px rgb(65 50 100 / 8%);
-  background: #fff;
+  background: rgb(255, 248, 248);
 }
 
 .weatherTemperature {
@@ -189,15 +189,14 @@ form input {
 .weather-forecast-preview {
   display: block;
   transition: all 200ms ease-in-out;
-  background: #fff;
   padding: 10px;
   text-align: center;
 }
 
 .weather-forecast-preview:hover {
   cursor: pointer;
-  background-color: #f7fffd;
-  box-shadow: 2px 2px 7px rgba(10, 135, 100, 0.3), inset -1px -1px 5px rgba(222, 222, 222, 0.5);
+  background-color: #fff7f9;
+  box-shadow: 2px 2px 7px rgba(135, 10, 52, 0.3), inset -1px -1px 5px rgba(222, 222, 222, 0.5);
   border-radius: 4px;
 }
 
