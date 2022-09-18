@@ -32,7 +32,7 @@ li strong {
 }
 
 img {
-  width: 50px;
+  width: 100%px;
 }
 
 hr {
@@ -79,6 +79,11 @@ form input {
   color: rgba(39, 33, 66, 0.7);
   background-color: #e9fff9;
   border-color: #e9fff9;
+}
+
+.form-control:focus {
+  border-color: #116439;
+  box-shadow: 0 0 0 0.25rem hwb(164 5% 1% / 0.25);
 }
 
 .search-button {
@@ -191,7 +196,7 @@ form input {
 .weather-forecast-preview:hover {
   cursor: pointer;
   background-color: #f7fffd;
-  box-shadow:  2px 2px 7px rgba(10, 135, 100, 0.3), inset -1px -1px 5px rgba(222, 222, 222, 0.5);
+  box-shadow: 2px 2px 7px rgba(10, 135, 100, 0.3), inset -1px -1px 5px rgba(222, 222, 222, 0.5);
   border-radius: 4px;
 }
 
