@@ -32,7 +32,7 @@ li strong {
 }
 
 img {
-  width: 100%px;
+  width: 64px;
 }
 
 hr {
@@ -176,8 +176,9 @@ form input {
 }
 
 #icon {
-  box-sizing: border-box;
-  margin: 30px 5px;
+  width: 80px;
+  height: 80px;
+  margin: 18px 0;
 }
 
 .weather-forecast {

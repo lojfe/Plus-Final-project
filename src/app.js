@@ -148,4 +148,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector(".celsiusTemperature");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Barcelona");
+search("Ho Chi Minh");
