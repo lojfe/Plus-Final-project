@@ -56,6 +56,8 @@ footer a {
 
 footer a:hover {
   color: #076646;
+  cursor: pointer;
+  transition: ease-in-out;
 }
 
 form {
@@ -81,6 +83,11 @@ form input {
   border-color: rgba(1, 55, 40, 0.07);
 }
 
+.form-control:hover {
+  cursor: pointer;
+  transition: ease-in-out;
+}
+
 .form-control:focus {
   border-color: #116439;
   box-shadow: 0 0 0 0.25rem hwb(164 5% 1% / 0.25);
@@ -95,6 +102,8 @@ form input {
 
 .btn.btn-primary.search-button:hover {
   background-color: #26c272;
+  cursor: pointer;
+  transition: ease-in-out;
 }
 
 .track-location {
@@ -108,6 +117,8 @@ form input {
 .btn.btn-primary.track-location:hover {
   color: #fff;
   background-color: #26c272;
+  cursor: pointer;
+  transition: ease-in-out;
 }
 
 .container {
@@ -173,6 +184,8 @@ form input {
 
 .unit a:hover {
   color: #076646;
+  cursor: pointer;
+  transition: ease-in-out;
 }
 
 #icon {
