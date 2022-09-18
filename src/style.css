@@ -52,12 +52,12 @@ footer {
 
 footer a {
   color: #21b069;
+  transition: all 200ms ease-in-out;
 }
 
 footer a:hover {
   color: #076646;
   cursor: pointer;
-  transition: ease-in-out;
 }
 
 form {
@@ -81,11 +81,11 @@ form input {
   color: rgba(39, 33, 66, 0.7);
   background-color: rgba(1, 55, 40, 0.07);
   border-color: rgba(1, 55, 40, 0.07);
+  transition: all 200ms ease-in-out;
 }
 
 .form-control:hover {
   cursor: pointer;
-  transition: ease-in-out;
 }
 
 .form-control:focus {
@@ -98,12 +98,12 @@ form input {
   padding: 0 40px;
   align-items: center;
   border: 0;
+  transition: all 200ms ease-in-out;
 }
 
 .btn.btn-primary.search-button:hover {
   background-color: #26c272;
   cursor: pointer;
-  transition: ease-in-out;
 }
 
 .track-location {
@@ -112,13 +112,13 @@ form input {
   color: #fff;
   height: 100%;
   width: 70px;
+  transition: all 200ms ease-in-out;
 }
 
 .btn.btn-primary.track-location:hover {
   color: #fff;
   background-color: #26c272;
   cursor: pointer;
-  transition: ease-in-out;
 }
 
 .container {
@@ -180,12 +180,12 @@ form input {
 
 .unit a {
   color: #21b069;
+  transition: all 200ms ease-in-out;
 }
 
 .unit a:hover {
   color: #076646;
   cursor: pointer;
-  transition: ease-in-out;
 }
 
 #icon {
